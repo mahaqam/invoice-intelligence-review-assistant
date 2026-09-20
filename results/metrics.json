@@ -1,0 +1,13 @@
+{
+  "records": 1414,
+  "unique_files": 1413,
+  "duplicate_rows": 1,
+  "json_parse_failures": 0,
+  "invoice_number_exact_match": 1.0,
+  "invoice_date_exact_match": 1.0,
+  "tax_exact_match_nonmissing": 1.0,
+  "tax_missing_annotations": 4,
+  "total_reconciliation_rate": 1.0,
+  "total_annotation_gross_count": 1386,
+  "total_annotation_net_count": 28
+}
