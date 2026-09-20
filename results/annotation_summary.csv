@@ -1,0 +1,8 @@
+check,value
+records,1414
+unique_files,1413
+duplicate_rows,1
+json_parse_failures,0
+missing_tax_annotations,4
+subtotal.total_as_gross,1386
+subtotal.total_as_net,28
