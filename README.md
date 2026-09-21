@@ -2,6 +2,16 @@
 
 Internal document-intelligence prototype for extracting structured fields from OCR text, validating invoice annotations, exposing extraction through a REST API, and reviewing results in a polished Streamlit interface.
 
+## Live demo
+**Try the interactive app:** https://invoice-intelligence-review-assistant.streamlit.app/
+
+The interface includes:
+- a built-in sample invoice
+- editable OCR-text input
+- structured invoice-field output
+- benchmark metrics and project scope
+- limitations and a direct GitHub link
+
 ## Dataset
 The analysis used three uploaded invoice CSV batches containing **1,414 rows** with file names, JSON annotations, and OCR text. There were **1,413 unique file names** and one duplicate row.
 
@@ -21,27 +31,6 @@ The analysis used three uploaded invoice CSV batches containing **1,414 rows** w
 
 The total metric is a reconciliation metric, not a claim that the dataset's total label had one consistent meaning.
 
-## Interactive demo
-The Streamlit app is ready for deployment from this repository.
-
-**Streamlit entry point:** `app/dashboard.py`
-
-The interface includes:
-- a built-in sample invoice
-- editable OCR-text input
-- structured invoice-field output
-- benchmark metrics and project scope
-- limitations and a direct GitHub link
-
-### Deploy on Streamlit Community Cloud
-1. Sign in to Streamlit Community Cloud with GitHub.
-2. Choose this repository: `mahaqam/invoice-intelligence-review-assistant`.
-3. Select branch `main`.
-4. Set the app file to `app/dashboard.py`.
-5. Click **Deploy**.
-
-No dataset upload or secrets are required for the interactive parser demo.
-
 ## Run locally
 ```bash
 pip install -r requirements.txt
@@ -57,6 +46,11 @@ streamlit run app/dashboard.py
 - `.streamlit/config.toml` — Streamlit theme/deployment configuration
 - `results/metrics.json` — verified benchmark summary
 - `results/annotation_summary.csv` — annotation-semantics QA summary
+
+## Deployment
+- Streamlit entry point: `app/dashboard.py`
+- Branch: `main`
+- No dataset upload or secrets are required for the interactive parser demo.
 
 ## Limitations
 - The provided files contain OCR text rather than original invoice images, so this project benchmarks **post-OCR document parsing**, not OCR-engine accuracy.
